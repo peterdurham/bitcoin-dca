@@ -60,7 +60,7 @@ export default function Home() {
       <main>
         <Header title="Bitcoin DCA by day of week" />
         <p className='subheader'>
-          This chart displays the variation from the average bitcoin price based on the day of the week. Chart is up to date with live exchange data.
+          This chart displays the variation (%) from the average bitcoin price based on the day of the week. Chart is up to date with live exchange data.
           <br></br><br></br>
           The <span className="bold italic">best time to buy historically</span> is when the number is <span className="bold red">most red</span>. Large price spikes in either direction can bias the data, especially on shorter timeframes.
         </p>
