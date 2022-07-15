@@ -4,7 +4,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function Home() {
-  const intervals = [14, 30, 60, 90, 120, 180, 270, 360, 540, 720, 1080, 1440, 1800]
+  const intervals = [7, 14, 30, 60, 90, 120, 180, 270, 360, 540, 720, 1080, 1440, 1800]
   const [prices, setPrices] = useState([])
   const [chartData, setChartData] = useState([])
 
