@@ -29,7 +29,7 @@ export default function Home() {
   }, [prices])
 
   const setupChartData = () => {
-    const intervals = [10, 30, 60, 90, 180, 720, 1080, 1800]
+    const intervals = [10, 30, 60, 90, 180, 360, 720, 1080, 1440, 1800]
     const allData = intervals.map((interval) => getRowData(interval))
     setChartData(allData)
   }
@@ -57,7 +57,7 @@ export default function Home() {
 
 
   if (chartData.length === 0) return <div>loading</div>
-  const intervals = [10, 30, 60, 90, 180, 720, 1080, 1800]
+  const intervals = [10, 30, 60, 90, 180, 360, 720, 1080, 1440, 1800]
   return (
     <div className="container">
       <Head>
@@ -111,7 +111,7 @@ export default function Home() {
         .table { width: 960px; margin: 0 auto; }
         .tr { display: flex; justify-content: space-between; }
         .tr .td, .tr .th { width: 12.5%; height: 24px; }
-
+        
         .th { text-align: right; }
         .percent { text-align: right; }
         .bold { font-weight: 700; }
