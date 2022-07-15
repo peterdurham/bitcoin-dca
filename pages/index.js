@@ -66,7 +66,7 @@ export default function Home() {
         </p>
         <div className="table">
           <div className="tr">
-            <div className="th"></div>
+            <div className="th first-header">Last</div>
             {['Average', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].map((label) => <div className="th">{label}</div>)}
           </div>
           {intervals.map((interval, index) => {
@@ -88,10 +88,11 @@ export default function Home() {
       <Footer />
       <style jsx>{`
         .subheader { width: 420px; margin: 0 auto; margin-bottom: 40px; }
-        .table { width: 960px; margin: 0 auto; }
+        .table { width: 1000px; margin: 0 auto; }
         .tr { display: flex; justify-content: space-between; }
         .tr .td, .tr .th { width: 12.5%; height: 24px; }
         .th { text-align: right; }
+        .first-header { text-align: left; }
         .percent { text-align: right; }
         .bold { font-weight: 700; }
         .italic { font-style: italic; }
